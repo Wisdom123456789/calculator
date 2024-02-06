@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+        <div class="calculator_body" id="calculatorBody">
+            <div class="first" id="first">
+                <div class="one">
+                    <button onclick="backgroundChange()"><img src="calculator.svg" alt=""></button>
+                    <p>Calculator</p>
+                </div>
+                <div class="icons">
+                    <div class="each">
+                        <span class="material-symbols-outlined">minimize</span>
+                    </div>
+                    <div class="each">
+                        <span class="material-symbols-outlined">check_box_outline_blank</span>
+                    </div>
+                    <div class="each">
+                        <span class="material-symbols-outlined">close</span>
+                    </div>
+                </div>
+            </div>
+            <div class="second" id="second">
+                <div class="second-one">
+                    <span class="material-symbols-outlined">menu</span>
+                    <p>Standard</p>
+                    <span class="material-symbols-outlined">open_in_new</span>
+                </div>
+                <div class="two">
+                    <span class="material-symbols-outlined">history</span>
+                </div>
+            </div>
+            <div class="smallcontainer" id="smallcontainer">
+            </div>
+            <div class="bigcontainer" id="bigcontainer">
+            </div>
+            <div class="third" id="third">
+                <button class="button">MC</button>
+                <button class="button">MR</button>
+                <button class="button">M+</button>
+                <button class="button">M-</button>
+                <button class="button">MS</button>
+                <button class="button">M<span class="material-symbols-outlined">expand_more</span></button>
+            </div>
+            <table>
+                <tr>
+                    <td><button onclick="modulus()">%</button></td>
+                    <td><button onclick="partialclose()">CE</button></td>
+                    <td><button onclick="clearall()">C</button></td>
+                    <td><button onclick="backspace()"><span class="material-symbols-outlined">backspace</span></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="divideX()"><sup>1</sup>/<sub>X</sub></button></td>
+                    <td><button onclick="raisePower()">X<sup>2</sup></button></td>
+                    <td><button onclick="squareRoot()"><sup>2</sup>&#8730;X</button></td>
+                    <td><button onclick="operators(' / ')">&#247;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayit(7)">7</button></td>
+                    <td><button onclick="displayit(8)">8</button></td>
+                    <td><button onclick="displayit(9)">9</button></td>
+                    <td><button onclick="operators(' x ')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayit(4)">4</button></td>
+                    <td><button onclick="displayit(5)">5</button></td>
+                    <td><button onclick="displayit(6)">6</button></td>
+                    <td><button onclick="operators(' - ')">&minus;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displayit(1)">1</button></td>
+                    <td><button onclick="displayit(2)">2</button></td>
+                    <td><button onclick="displayit(3)">3</button></td>
+                    <td><button onclick="operators(' + ')">&plus;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="negate()"><sup>+</sup>/<sub>-</sub></button></td>
+                    <td><button onclick="displayit(0)">0</button></td>
+                    <td><button onclick="displayit('.')">.</button></td>
+                    <td><button class="equal" onclick="equal()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+<script src="calculator.js"></script>
